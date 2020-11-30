@@ -174,7 +174,7 @@ function AIControl() {
     //hit the ball - distance is important:
     //mindist threshold (mindist < threshold) is equivalent to reaction time
     //aidifficulty is equivalent to misschance - ratio should be Th, 1/Th
-    if (mindist < aidifficulty * 50 && Math.random() < 0.1 * aidifficulty) {
+    if (mindist < aidifficulty * 50+30 && Math.random() < 0.1 * aidifficulty) {
         ballV[mindx] *= -1;
         tglpflash[0] = true;
         players[0].tint = 0xffffff;
