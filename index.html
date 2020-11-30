@@ -5,11 +5,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <title>RAT-ECE-SIM</title>
   <script src="./dist/game.js"></script>
+
 </head>
 
 <body>
   <section class="hero">
-
     <h1 class="hero-body title has-text-centered">Reverse a Thing (RAT) Simulator</h1>
   </section>
   <div id="gameDiv"> </div>
@@ -31,16 +31,52 @@
           <td>Spacebar</td>
           <td>Actuate a column</td>
         </tr>
+        <tr>
+          <td>Q</td>
+          <td>Change the AI difficulty. 0.1 is normal, 1 has the AI literally cheating.</td>
+        </tr>
+        <tr>
+          <td>E</td>
+          <td>Cycle through game running speed by increments of 0.25</td>
+        </tr>
       </table>
-      <p> You control the bottom (fuchsia) player.</p>
+      <p> You control the bottom (fuchsia) player, while the yellow player is controlled by a greedy and dumb AI until I get multiplayer working.</p>
       
-      <section class="container">
-        <p class="title my-5">Development Details</p>
-      
+      <p>Currently there is no reset so you will have to refresh the page to reset the game.</p>
+
       </section>
     </div>
   </div>
+  <footer class="footer is-light">
+    <div class="content">
+      <div class="columns is-centered">
+        <div class="column is-4 has-text-centered">
+          <p class="subtitle">Built for
+            <a href="https://sparkuoft.wixsite.com/sparkuoft">UofT's Spark Design Club.</a>
 
+          </p>
+          <span> Current Version: <div class="m-3 tag">v0.1</div></span>
+          <span> Last Updated:<div class="m-3 tag"> 29 November 2020 </div></span>
+        </div>
+        <div class="column is-4">
+          <section>
+            <p class="subtitle">Tools</p>
+            This game is built with <a href="https://phaser.io/phaser3">Phaser 3</a> which uses JS, and deployed with
+            Netlify. The site is styled with BulmaCSS.
+          </section>
+          <section class="my-3 has-text-centered">
+            <button class="button is-warning">
+              <a href=https://github.com/wintrmut3/RAT_ECE_SIM>
+                <p class="has-text-dark">Github Source Code</p>
+              </a>
+            </button>
+          </section>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 
