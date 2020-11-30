@@ -15,6 +15,8 @@ var config = {
         create: create,
         update: update
     },
+    autoCenter: true,
+    parent: "gameDiv",
 
 };
 
